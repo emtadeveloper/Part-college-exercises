@@ -16,19 +16,23 @@
     align-items: center;
     justify-content: center;
 }
+
 .alert{
      width: 45rem;
      padding: 3rem;
      border-radius: .5rem;
      box-shadow: 6px 3px 34px  var( --box-shadow);
 }
-.alert--title {
+
+/* alert header */
+
+.alert__header > .title {
     margin: 1rem 4rem;
     font-weight: bold;
     font-size: 1.6rem;
     text-align: center;
 }
-.alert--description{
+.alert__header > .description{
     font-size: 1.4rem;
     text-align: center;
     font-weight: bold;
@@ -36,12 +40,15 @@
     margin: 2rem 4rem;
 }
 
-.alert--btn{
+
+/* content */
+
+.alert__content{
     display: flex;
     justify-content: center;
 }
 
-.btn--accept{
+.alert__content > .btn-accept{
     color: var( --light-white-color);
     height: 5rem;
     width: 13rem;
@@ -54,7 +61,7 @@
     background-image: linear-gradient(45deg, var(--ligh-pink) 0%, var(--pink) 100%);
 }
 
-.btn--leaving{
+.alert__content > .btn-leaving{
     margin: 1rem;
     width: 13rem;
     font-weight: bold;
