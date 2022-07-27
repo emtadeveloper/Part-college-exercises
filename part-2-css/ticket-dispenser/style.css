@@ -1,0 +1,128 @@
+@import "./reset.css";
+
+:root{
+    --background : #f89978;
+    --hoverText: #fbdec6;
+    --shadowColor : rgba(0, 0, 0, .2);
+    --grayColor :  #efefef;
+    --lightBlackColor : rgba(0,0,0,.5);
+    --whiteColor : #FFF
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+}
+
+
+
+.ticket{
+    width: 24rem;
+    height: 40rem;
+    padding: 4rem 4rem 0 4rem;
+    border-radius: 2rem;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 4px 4px 1px  var(--shadowColor)
+}
+
+/* ticket header */
+
+.ticket__header {
+    height: 50%;
+    border-bottom: 2px solid
+}
+
+.ticket__header > .title{
+   text-align: center;
+   font-size: 1.8rem;
+}
+
+.ticket__header  > .description{
+    margin-top: 2rem;
+    text-align: center;
+    cursor: pointer;
+   font-size: 1rem;
+}
+
+.ticket__header > .description strong{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: var(--hoverText);
+}
+
+.ticket__header > .description:hover strong {
+    transform: scale(1.3);
+    transition: transform .5s;
+  }
+  
+/* =========================== */
+
+
+.ticket__content{
+    height: 50%;
+    overflow: hidden;
+}
+
+.animation-1 , .animation-2{ 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grayColor);
+    border-radius: 1rem;
+    border-top: 1px dashed var(--lightBlackColor);
+    border-bottom: 1px dashed var(--lightBlackColor);
+}
+
+.animation-2{ 
+    animation:  ticket ease 2s infinite;
+}
+.animation-1{ 
+    transform: translateY(-100%);
+    animation:  ticket ease 2s infinite;
+}
+
+.animation-1 div , .animation-2 div{
+    position: relative;
+    width:60%;
+    height:2px;
+    background-color: var(--lightBlackColor);
+}
+.animation-1 div::after , .animation-2 div::after{
+    content:"";
+    z-index: 1;
+    position: absolute;
+    right: -6rem;
+    top: -2.5rem;
+    width:5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color:  var(--whiteColor);
+}
+.animation-1 div::before , .animation-2 div::before{
+    content:"";
+    z-index: 1;
+    position: absolute;
+    left: -6rem;
+    top: -2.5rem;
+    width:5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--whiteColor)
+}
+
+@keyframes ticket { 
+    from { 
+        transform : translateY(-100%)
+    }
+    to {
+        transform : translateY(0)
+    }
+}

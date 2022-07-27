@@ -1,0 +1,35 @@
+@font-face {
+  font-family: RobotoMono-Bold;
+    src: url(fonts/RobotoMono-Bold.ttf);
+}
+@font-face {
+  font-family: RobotoMono-Medium;
+    src: url(fonts/RobotoMono-Medium.ttf);
+}
+@font-face {
+  font-family: RobotoMono-Regular;
+    src: url(fonts/RobotoMono-Regular.ttf);
+}
+
+*,
+  body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 10px;
+    outline: none;
+    box-sizing: border-box;
+    font-family:RobotoMono-Medium
+  }
+  a {
+    text-decoration: none;
+  }
+  li,
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+ }
+
+
