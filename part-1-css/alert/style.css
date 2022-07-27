@@ -1,0 +1,68 @@
+@import "./reset.css";
+
+:root{
+    --box-shadow : rgba(0,0,0,0.15);
+    --description-color :rgba(0,0,0,0.4);
+    --leaving-color: rgba(0,0,0,0.6);
+    --light-white-color: #fff;
+    --ligh-pink: #ff99ac;
+    --pink:#FF5ACD
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+.alert{
+     width: 45rem;
+     padding: 3rem;
+     border-radius: .5rem;
+     box-shadow: 6px 3px 34px  var( --box-shadow);
+}
+.alert--title {
+    margin: 1rem 4rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.alert--description{
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: bold;
+    color: var( --description-color);
+    margin: 2rem 4rem;
+}
+
+.alert--btn{
+    display: flex;
+    justify-content: center;
+}
+
+.btn--accept{
+    color: var( --light-white-color);
+    height: 5rem;
+    width: 13rem;
+    margin: 1rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    background-color:var(--ligh-pink);
+    background-image: linear-gradient(45deg, var(--ligh-pink) 0%, var(--pink) 100%);
+}
+
+.btn--leaving{
+    margin: 1rem;
+    width: 13rem;
+    font-weight: bold;
+    color:var( --leaving-color);
+    height: 5rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    border-radius: .5rem;
+    background-color: var( --light-white-color);
+    border: .2rem solid var( --leaving-color);
+}

@@ -1,0 +1,22 @@
+@import url('https://v1.fontapi.ir/css/Vazir');
+  *,
+  body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 10px;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Vazir;
+  }
+  a {
+    text-decoration: none;
+  }
+  li,
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
