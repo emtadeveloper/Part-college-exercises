@@ -1,0 +1,18 @@
+.box {
+    width: 500px;
+    height: 100px;
+    display: flex;
+    border: 3px dashed rgba(0,0,0,.5) ;
+}
+
+.box__left , .box__right , .box__center {
+    background-color: aqua;
+    margin: 8px;
+    flex-grow: 1;
+}
+
+.box__left:active , .box__right:active , .box__center:active {
+    background-color: orange;
+    flex-grow: 3;
+    transition: flex-grow 1s;
+}
